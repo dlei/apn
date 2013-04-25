@@ -6824,7 +6824,8 @@ def hanzi2pinyin(hanzi):
 			if len(newPinYinDict[char_ord]) <= 1:
 				pinyin += newPinYinDict[char_ord][0]
 			else:
-				print newPinYinDict[char_ord]
+				for i in range(len(newPinYinDict[char_ord])):
+					print i, newPinYinDict[char_ord][i]
 				print('Choose Your Own :')
 				user_input = int(raw_input())
 				pinyin += newPinYinDict[char_ord][user_input]
